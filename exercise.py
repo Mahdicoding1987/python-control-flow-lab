@@ -70,21 +70,19 @@ weather_advice()
 
 #exercise5
 
-month = "Oct"
-day = 12
+month = "Mar"
+day = 18
 
 def determine_season():
 
     if month in ["Dec", "Jan", "Feb", "Mar"]:
-        if month == "Dec" and day < 21:
+        if month == "Dec" and day < 21 or month == "Mar" and day >= 20:
             season = "Fall"
-            print("The season is", season)
-        elif month == "Mar" and day > 19:
-            season = "Spring"
             print("The season is", season)
         else:
             season = "Winter"
             print("The season is", season)
+
     elif month in ["Mar", "Apr", "May", "Jun"]:
         if month == "Mar" and day >= 20 or month == "Jun" and day <= 20:
             season = "Spring"
