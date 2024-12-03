@@ -9,69 +9,70 @@ print_greeting()
 
 #exercise1
 
-vowel = ("a", "e", "i", "o", "u")
+# vowel = ("a", "e", "i", "o", "u")
 
-letter = ("c")
+# letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
 
-def check_letter():
+# def check_letter():
 
-    if letter in vowel:
-        print(letter, "is a vowel")
-    else:
-        print(letter, "is not a vowel")
+#     if letter in vowel:
+#         print(letter, "is a vowel")
+#     elif letter.isalpha():
+#         print(letter, "is a consonant")
+#     else:
+#         print("Please enter a valid letter (a-z or A-Z)")
 
-check_letter()
+# check_letter()
 
 #exercise2
 
-age = 12
+# def check_voting_eligibility():
+#     age = int(input("Please enter your age: "))
 
-def check_voting_eligibility():
+#     if age > 17:
+#         print("You are eligible to vote!")
+#     else:
+#         print("You are not eligible to vote.")
 
-    if age >= 18:
-        print("You are eligible to vote!")
-    else:
-        print("You are not eligible to vote.")
+# check_voting_eligibility()
 
-check_voting_eligibility()
+# #exercise3
 
-#exercise3
+# dog_age = int(input("Please enter Dogs age: "))
 
-dog_age = 3
+# def calculate_dog_years():
 
-def calculate_dog_years():
+#     if dog_age <= 2:
+#         dog_years = dog_age * 10
+#         print("The dog's age in human years is:", dog_years)
+#     else:
+#         dog_years = 20 + (dog_age - 2) * 7
+#         print("The dog's age in human years is:", dog_years)
 
-    if dog_age <= 2:
-        dog_years = dog_age * 10
-        print("The dog's age in human years is:", dog_years)
-    else:
-        dog_years = 20 + (dog_age - 2) * 7
-        print("The dog's age in human years is:", dog_years)
+# calculate_dog_years()
 
-calculate_dog_years()
+# #exercise4
 
-#exercise4
+# cold = input("Its Cold?: ")
+# rainy = input("Its rainy?: ")
 
-cold = True
-rainy = True
+# def weather_advice():
 
-def weather_advice():
+#     if cold and rainy:
+#             print("Wear a waterproof coat.")
+#     elif cold and not rainy:
+#             print("Wear a warm coat.")
+#     elif not cold and rainy:
+#             print("Carry an umbrella.")
+#     else:
+#             print("Wear light clothing.")
 
-    if cold and rainy:
-            print("Wear a waterproof coat.")
-    elif cold and not rainy:
-            print("Wear a warm coat.")
-    elif not cold and rainy:
-            print("Carry an umbrella.")
-    else:
-            print("Wear light clothing.")
+# weather_advice()
 
-weather_advice()
+# #exercise5
 
-#exercise5
-
-month = "Mar"
-day = 18
+month = input("Which month is it?: ")
+day = int(input("What day is it?: "))
 
 def determine_season():
 
